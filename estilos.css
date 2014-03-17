@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 @font-face {
 	font-family: 'puls4';
 	src:url('fuentes/puls4.eot?n7ifvt');
@@ -22,6 +24,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 
 .icon-f_abajo:before {
 	content: "\e600";
@@ -291,3 +294,46 @@ aside
 		width: 100%;
 	}
 }
+
+/**
+* Formularios
+*/
+.formulario
+{
+	text-align: right;
+	padding: 1em;
+	display: none;
+}
+.formulario input
+{
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="text"],
+.formulario input[type="url"]
+{
+	border: 1px solid #888;
+}
+.formulario input[type="submit"]
+{
+	background: #22BCE0;
+	border: 1px solid #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	color: white;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

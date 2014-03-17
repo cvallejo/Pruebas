@@ -5,10 +5,11 @@
 	<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<title>Puls2014: Comunidad online de gente atractiva</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="estilos.css" />
 	
+	<script src="prefixfree.js"></script>
 </head>
 <body>
 	<header>
@@ -32,10 +33,15 @@
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" placeholder="Título" id="titulo" required />
+		<input type="url" placeholder="Link" id="link" required />
+		<input type="submit" value="Enviar" />
+	</form>
 	<aside>
 		<video width="320" height="240" autoplay controls>
-			<source src="lecturas.mp4" type="video/mp4"></source>
-			<source src="lecturas.ogg" type="video/ogg"></source>
+<!-- 			<source src="lecturas.mp4" type="video/mp4"></source>
+ -->			<source src="lecturas.ogg" type="video/ogg"></source>
 			<!-- actualiza tu navegador -->
 		</video>		
 	</aside>
@@ -191,5 +197,21 @@
 		</p>
 		<p>mejorando.la 2014</p>
 	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="formulario.js"></script>
+	<script>
+		window.onload = function(){
+			console.log('Ya se disparó el evento OnLoad');
+		}
+
+		$(function(){
+			console.log('Ya se disparó el evento DOMContentLoaded');
+		})
+	</script>
+
 </body>
 </html>
+
+
+
